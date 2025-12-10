@@ -1,42 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Validation Practice</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container form-section">
+      <h2>Practice Form Validation</h2>
+      <div class="form-container">
+        <form id="myForm">
+          <label>Name</label>
+          <input type="text" id="name" />
+          <span class="error" id="nameError"></span>
 
-    <h2>Practice Form Validation</h2>
+          <label>Email</label>
+          <input type="text" id="email" />
+          <span class="error" id="emailError"></span>
 
-    <form id="myForm">
+          <label>Phone (11 digits)</label>
+          <input type="text" id="phone" />
+          <span class="error" id="phoneError"></span>
 
-        <label>Name</label>
-        <input type="text" id="name">
-        <span class="error" id="nameError"></span>
+          <label>Password</label>
+          <input type="password" id="password" />
+          <span class="error" id="passError"></span>
 
-        <label>Email</label>
-        <input type="text" id="email">
-        <span class="error" id="emailError"></span>
+          <label>Confirm Password</label>
+          <input type="password" id="confirmPassword" />
+          <span class="error" id="confirmPassError"></span>
 
-        <label>Phone (11 digits)</label>
-        <input type="text" id="phone">
-        <span class="error" id="phoneError"></span>
-
-        <label>Password</label>
-        <input type="password" id="password">
-        <span class="error" id="passError"></span>
-
-        <label>Confirm Password</label>
-        <input type="password" id="confirmPassword">
-        <span class="error" id="confirmPassError"></span>
-
-        <button type="submit">Submit</button>
-
-    </form>
-
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
     <script src="script.js"></script>
-
-</body>
+  </body>
 </html>
