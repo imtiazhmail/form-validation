@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Practice Form Validation</h2>
+
+    <form id="myForm">
+
+        <label>Name</label>
+        <input type="text" id="name">
+        <span class="error" id="nameError"></span>
+
+        <label>Email</label>
+        <input type="text" id="email">
+        <span class="error" id="emailError"></span>
+
+        <label>Phone (11 digits)</label>
+        <input type="text" id="phone">
+        <span class="error" id="phoneError"></span>
+
+        <label>Password</label>
+        <input type="password" id="password">
+        <span class="error" id="passError"></span>
+
+        <label>Confirm Password</label>
+        <input type="password" id="confirmPassword">
+        <span class="error" id="confirmPassError"></span>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
