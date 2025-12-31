@@ -1,13 +1,13 @@
 document.getElementById("myForm").addEventListener("submit", function (e) {
     e.preventDefault(); // stop form submit
 
-    let name = document.getElementById("name").value.trim();
-    let email = document.getElementById("email").value.trim();
+    let name = document.getElementById("name").value.trim(); // get rid of extra spaces
+    let email = document.getElementById("email").value.trim(); 
     let phone = document.getElementById("phone").value.trim();
     let password = document.getElementById("password").value;
     let confirmPassword = document.getElementById("confirmPassword").value;
 
-    let valid = true;
+    let valid = true; // flag to track overall form validity
 
     // Reset errors
     document.querySelectorAll(".error").forEach(el => el.innerText = "");
